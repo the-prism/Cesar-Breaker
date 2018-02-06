@@ -5,13 +5,12 @@ class Decryptor
 public:
 	Decryptor();
 	~Decryptor();
-	void SetMessage(std::string* input); //Reference ms ^ ?
+	void SetMessage(std::string input);
 	void DecodeMessage();
 private:
 	std::string encrypted_message;
 	int key;
 	std::string decrypted_message;
-	char* counter; //TODO: C++ array
-
+	int counter[26];
 };
 
