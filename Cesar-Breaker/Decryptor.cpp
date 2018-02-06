@@ -11,9 +11,9 @@ Decryptor::~Decryptor()
 {
 }
 
-void Decryptor::SetMessage(std::string * input)
+void Decryptor::SetMessage(std::string input)
 {
-	this->encrypted_message = *input;
+	this->encrypted_message = input;
 }
 
 void Decryptor::DecodeMessage()
